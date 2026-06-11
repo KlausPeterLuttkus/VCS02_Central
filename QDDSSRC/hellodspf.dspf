@@ -1,0 +1,8 @@
+     A*%%TS  SD  20260426  174440  LGADOZ01    REL-V7R4M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R FMT10
+     A*%%TS  SD  20260426  174123  LGADOZ01    REL-V7R4M0  5770-WDS
+     A                                      CA03(02)
+     A                                 11 21'Begrüßung:'
+     A            SCRNAME       52   O 11 33
