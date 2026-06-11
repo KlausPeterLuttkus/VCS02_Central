@@ -1,1 +1,3 @@
-# VCS02_Central
+# Resository: VCS02_Central
+## EduVs02 - Devops
+Laufender Text
