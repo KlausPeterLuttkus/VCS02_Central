@@ -1,0 +1,6 @@
+{
+  "description": "IBMi_VSC02",
+  "buildCommand": "makei build",
+  "buildObjectCommand": "makei b -t {object}",
+  "compileCommand": "makei compile -f {filename}"
+}
