@@ -37,6 +37,8 @@
   },
   {
     "extensions": [
+<<<<<<< HEAD
+=======
       "CLP",
       "CLLE"
     ],
@@ -47,6 +49,7 @@
   },
   {
     "extensions": [
+>>>>>>> de5f3e35ddc97675962175d232f2f5befcb4d178
       "SQL",
       "TABLE",
       "VIEW",
