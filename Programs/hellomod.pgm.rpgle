@@ -18,7 +18,7 @@
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------
 //
-//  @name    HELLOGBY.RPGLE
+//  @name    HelloWorld.RPGLE
 //
 //  @purpose
 //
@@ -37,7 +37,7 @@
 
 
 
-ctl-opt main(Main) stgmdl(*snglvl) bnddir('TESTBND');
+ctl-opt main(Main) stgmdl(*snglvl) bnddir('BND02');
 
 /if defined(*crtbndrpg)
    ctl-opt actgrp(*new);
@@ -47,17 +47,8 @@ ctl-opt alwnull(*usrctl) expropts(*alwblanknum:*usedecedit);
 ctl-opt option(*nodebugio:*srcstmt:*nounref) debug(*retval:*constants);
 
 
-dcl-pr helloWorld varchar(100);
-      inName char(10) const;
-end-pr;
-
-dcl-pr goodbyeWorld varchar(100);
-      inName char(10) const;
-end-pr;
-
-
 dcl-proc Main;
-  dcl-pi *n extpgm('HELLOGBY');
+  dcl-pi *n extpgm('HELLOMOD');
       inName char(10) const;
   end-pi;
 
@@ -69,9 +60,7 @@ dcl-proc Main;
   monitor;
 
       lclName = inName;
-      lclString = helloWorld(lclName);
-      dsply lclString;
-      lclString = goodbyeWorld(lclName);
+      lclString  = ' Hello World ' + %trim(lclName) + '!';
       dsply lclString;
 
   on-error;

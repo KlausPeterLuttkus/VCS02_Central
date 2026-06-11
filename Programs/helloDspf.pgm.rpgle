@@ -46,22 +46,26 @@ ctl-opt main(Main) stgmdl(*snglvl);
 ctl-opt alwnull(*usrctl) expropts(*alwblanknum:*usedecedit);
 ctl-opt option(*nodebugio:*srcstmt:*nounref) debug(*retval:*constants);
 
+dcl-f Screen workstn extdesc('HELLODSPF')  extfile('HELLODSPF')  usropn;
 
 dcl-proc Main;
-  dcl-pi *n extpgm('HELLOWORLD');
+  dcl-pi *n extpgm('HELLODSPF');
       inName char(10) const;
   end-pi;
 
   dcl-s lclString char(52) inz;
-  dcl-s lclName char(10) inz;
-
+  
   dcl-s retCode ind inz(*on);
 
   monitor;
 
-      lclName = inName;
-      lclString  = ' Hello World ' + %trim(lclName) + '!';
-      dsply lclString;
+      open Screen;
+
+      scrNAME  = ' Hello World ' + %trim(inName) + '!';
+
+      dow *in03 = *off;
+        exfmt FMT10;
+      enddo;
 
   on-error;
      retCode = *off;
@@ -70,7 +74,7 @@ dcl-proc Main;
   return;
 
 on-exit;
-
+  close Screen;
 end-proc;
 
 

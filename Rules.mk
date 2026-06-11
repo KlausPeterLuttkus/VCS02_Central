@@ -1,1 +1,2 @@
-SUBDIRS = QDDSSRC QRPGLESRC QSRVSRC
+# Reihenfolge der Objekterstellung
+SUBDIRS = DisplayFiles Services Programs
