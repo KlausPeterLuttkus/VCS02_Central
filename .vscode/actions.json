@@ -37,6 +37,19 @@
   },
   {
     "extensions": [
+<<<<<<< HEAD
+=======
+      "CLP",
+      "CLLE"
+    ],
+    "name": "Create Bound CL Program",
+    "command": "CRTBNDCL PGM(&CURLIB/&NAME) SRCSTMF('&RELATIVEPATH') OPTION(*EVENTF) DBGVIEW(*SOURCE)",
+    "deployFirst": true,
+    "environment": "ile"
+  },
+  {
+    "extensions": [
+>>>>>>> de5f3e35ddc97675962175d232f2f5befcb4d178
       "SQL",
       "TABLE",
       "VIEW",
