@@ -1,2 +1,2 @@
 # Reihenfolge der Objekterstellung
-SUBDIRS = DisplayFiles Services Programs
+SUBDIRS = BinderDirectories DisplayFiles Services Programs
