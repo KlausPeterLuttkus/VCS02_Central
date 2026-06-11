@@ -1,0 +1,7 @@
+{
+  "description": "IBMi_VCS02",
+  "curlib": "&CURLIB",
+  "buildCommand": "makei build",
+  "buildObjectCommand": "makei b -t {object}",
+  "compileCommand": "makei compile -f {filename}"
+}
