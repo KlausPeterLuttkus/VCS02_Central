@@ -60,7 +60,7 @@ dcl-proc Main;
   monitor;
 
       lclName = inName;
-      lclString  = ' Hello World ' + %trim(lclName) + '!';
+      lclString  = ' Hello ' + %trim(lclName) + '!';
       dsply lclString;
 
   on-error;
