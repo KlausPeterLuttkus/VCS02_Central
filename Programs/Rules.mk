@@ -3,6 +3,7 @@ HELLOWORLD.PGM: helloworld.pgm.rpgle
 
 # Standalone Programm mit Bildschirmdialog
 HELLODSPF.PGM: hellodspf.pgm.rpgle hellodspf.dspf
+# HELLODSPF.PGM: hellodspf.pgm.rpgle
 
 # Modul erstellen für HELLOMOD.PGM
 HELLOMOD.MODULE: hellomod.rpgle
